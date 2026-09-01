@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cr5v1jvb3n2da" path="res://assets/ball.png" id="2_f27ka"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
-size = Vector2(3.7838902, 2.4820948)
+size = Vector2(3.0802925, 2.2830193)
 
 [node name="Node2D" type="Node2D" unique_id=149999594]
 
@@ -17,6 +17,8 @@ position = Vector2(26, 24)
 texture = ExtResource("2_f27ka")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=255857196]
-position = Vector2(26.000002, 24)
-scale = Vector2(4.2284527, 6.446169)
+position = Vector2(26, 24.144587)
+scale = Vector2(3.8957345, 5.9224067)
 shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=182459091]
