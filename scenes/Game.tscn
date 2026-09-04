@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bbx57xdsc3xxk" path="res://assets/metalTile.png" id="1_qbsmt"]
 [ext_resource type="Texture2D" uid="uid://cfwenxannl13b" path="res://assets/dirtTile.png" id="2_cpr0p"]
-[ext_resource type="PackedScene" uid="uid://brxmnei1yf4xk" path="res://scripts/PlayerMovementScript.tscn" id="3_cpr0p"]
+[ext_resource type="PackedScene" uid="uid://brxmnei1yf4xk" path="res://scenes/PlayerMovementScript.tscn" id="3_cpr0p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_78awf"]
 texture = ExtResource("1_qbsmt")
@@ -14,10 +14,17 @@ texture = ExtResource("2_cpr0p")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cpr0p"]
+load_path = "res://.godot/imported/checkpoint.png-ce893ca83fd96e39d7439666aaf773e8.ctex"
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aug50"]
+texture = SubResource("CompressedTexture2D_cpr0p")
+
 [sub_resource type="TileSet" id="TileSet_p84oq"]
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_78awf")
 sources/1 = SubResource("TileSetAtlasSource_s0nni")
+sources/2 = SubResource("TileSetAtlasSource_aug50")
 
 [node name="Game" type="Node2D" unique_id=1894797291]
 

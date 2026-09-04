@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dkwprievkw6jm"]
+
+[ext_resource type="Texture2D" uid="uid://c6s5wo7wumtxw" path="res://assets/jumpPad.png" id="1_7e8al"]
+[ext_resource type="Script" uid="uid://c78xx28b5f0is" path="res://scenes/jump_pad.gd" id="1_kabc6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(16, 16)
+
+[node name="JumpPad" type="Area2D" unique_id=1221170848]
+script = ExtResource("1_kabc6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1246803910]
+texture = ExtResource("1_7e8al")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1403035498]
+shape = SubResource("RectangleShape2D_xrivr")
