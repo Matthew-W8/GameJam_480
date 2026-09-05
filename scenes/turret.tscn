@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c5b4xtumam37f"]
+
+[ext_resource type="Script" uid="uid://dchors4prve6g" path="res://scripts/turret.gd" id="1_el7wl"]
+[ext_resource type="Texture2D" uid="uid://bqy35slb5fhk" path="res://assets/turretTop.png" id="1_x3mc5"]
+
+[node name="Turret" type="Node2D" unique_id=1069021855]
+rotation = 1.5707964
+script = ExtResource("1_el7wl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1225456621]
+texture = ExtResource("1_x3mc5")
+
+[node name="Muzzle" type="Marker2D" parent="." unique_id=1900075408]
+position = Vector2(0, 8)
+
+[node name="ShootTimer" type="Timer" parent="." unique_id=2039839395]
+wait_time = 2.0
+autostart = true

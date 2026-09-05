@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dkwprievkw6jm"]
 
 [ext_resource type="Texture2D" uid="uid://c6s5wo7wumtxw" path="res://assets/jumpPad.png" id="1_7e8al"]
-[ext_resource type="Script" uid="uid://c78xx28b5f0is" path="res://scenes/jump_pad.gd" id="1_kabc6"]
+[ext_resource type="Script" uid="uid://c78xx28b5f0is" path="res://scripts/jump_pad.gd" id="1_kabc6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
 size = Vector2(16, 16)

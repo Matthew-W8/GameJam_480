@@ -28,7 +28,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
-size = Vector2(2.5669103, 1.9568737)
+size = Vector2(3.0802922, 2.1199465)
 
 [node name="Node2D" type="Node2D" unique_id=149999594]
 
@@ -37,14 +37,13 @@ scale = Vector2(1, 1.0354288)
 script = ExtResource("1_s8vfr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1684497776]
-position = Vector2(26, 22.21302)
 sprite_frames = SubResource("SpriteFrames_xrivr")
 animation = &"Move"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=255857196]
-position = Vector2(26, 24.144587)
+position = Vector2(0, 0.4828918)
 scale = Vector2(3.8957345, 5.9224067)
 shape = SubResource("RectangleShape2D_xrivr")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=182459091]
-zoom = Vector2(3, 3)
+zoom = Vector2(3.5, 3.5)

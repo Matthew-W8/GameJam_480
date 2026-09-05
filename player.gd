@@ -2,8 +2,10 @@ extends CharacterBody2D
 
 
 const SPEED = 150.0
-const JUMP_VELOCITY = -400.0
+const JUMP_VELOCITY = -200.0
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+
+@onready var spawn_position: Vector2 = global_position
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -35,3 +37,11 @@ func update_animation(direction: float) -> void:
 		animated_sprite.play("Move")
 	else:
 		animated_sprite.play("Idle")
+		
+func set_checkpoint(new_position: Vector2) -> void:
+	spawn_position = new_position
+	print("New checkpoint set at: ", spawn_position)
+
+func die_and_respawn() -> void:
+	global_position = spawn_position
+	velocity = Vector2.ZERO

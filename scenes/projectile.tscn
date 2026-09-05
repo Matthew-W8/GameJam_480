@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cyh2f6x6fpftt"]
+
+[ext_resource type="Texture2D" uid="uid://cr5v1jvb3n2da" path="res://assets/ball.png" id="1_c8fcr"]
+[ext_resource type="Script" uid="uid://ch4dyl2tk6s2b" path="res://scripts/projectile.gd" id="1_q3m7n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xrivr"]
+radius = 7.0
+
+[node name="Projectile" type="Area2D" unique_id=1585698605]
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_q3m7n")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1439414433]
+texture = ExtResource("1_c8fcr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1894113359]
+shape = SubResource("CircleShape2D_xrivr")
+
+[node name="DespawnTimer" type="Timer" parent="." unique_id=1925025759]
+wait_time = 3.0
