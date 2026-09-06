@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://brxmnei1yf4xk"]
 
-[ext_resource type="Script" uid="uid://bpemf4sn0jgrd" path="res://player.gd" id="1_s8vfr"]
+[ext_resource type="Script" uid="uid://bpemf4sn0jgrd" path="res://scripts/player.gd" id="1_s8vfr"]
 [ext_resource type="Texture2D" uid="uid://cbkp2h6lo04jf" path="res://assets/root.png" id="2_0gupl"]
 [ext_resource type="Texture2D" uid="uid://iw8s70dpjnnr" path="res://assets/rootStepL.png" id="3_o53d1"]
 [ext_resource type="Texture2D" uid="uid://xlgvk56bkhmj" path="res://assets/rootStepR.png" id="4_2dxev"]
@@ -28,12 +28,13 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
-size = Vector2(3.0802922, 2.1199465)
+size = Vector2(11, 12.122653)
 
 [node name="Node2D" type="Node2D" unique_id=149999594]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1147216683]
-scale = Vector2(1, 1.0354288)
+collision_layer = 2
+collision_mask = 7
 script = ExtResource("1_s8vfr")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1684497776]
@@ -41,8 +42,7 @@ sprite_frames = SubResource("SpriteFrames_xrivr")
 animation = &"Move"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=255857196]
-position = Vector2(0, 0.4828918)
-scale = Vector2(3.8957345, 5.9224067)
+position = Vector2(-0.5, 1.0613265)
 shape = SubResource("RectangleShape2D_xrivr")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=182459091]

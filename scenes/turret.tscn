@@ -14,5 +14,4 @@ texture = ExtResource("1_x3mc5")
 position = Vector2(0, 8)
 
 [node name="ShootTimer" type="Timer" parent="." unique_id=2039839395]
-wait_time = 2.0
 autostart = true

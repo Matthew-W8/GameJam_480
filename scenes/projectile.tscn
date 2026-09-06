@@ -8,6 +8,8 @@ radius = 7.0
 
 [node name="Projectile" type="Area2D" unique_id=1585698605]
 scale = Vector2(0.75, 0.75)
+collision_layer = 4
+collision_mask = 3
 script = ExtResource("1_q3m7n")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1439414433]
@@ -17,4 +19,4 @@ texture = ExtResource("1_c8fcr")
 shape = SubResource("CircleShape2D_xrivr")
 
 [node name="DespawnTimer" type="Timer" parent="." unique_id=1925025759]
-wait_time = 3.0
+wait_time = 0.75

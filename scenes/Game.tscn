@@ -11,6 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://choyvpa6bx1yn" path="res://scenes/spikes.tscn" id="9_g4kob"]
 [ext_resource type="PackedScene" uid="uid://dkwprievkw6jm" path="res://scenes/jump_pad.tscn" id="10_qy1jj"]
 [ext_resource type="PackedScene" uid="uid://c5b4xtumam37f" path="res://scenes/turret.tscn" id="11_3xj3m"]
+[ext_resource type="PackedScene" uid="uid://bs4yd8lxt34sb" path="res://scenes/moving_spike.tscn" id="12_mcffj"]
+[ext_resource type="PackedScene" uid="uid://ck45tke0ubknp" path="res://scenes/level_end.tscn" id="13_2rd6h"]
+[ext_resource type="PackedScene" uid="uid://mu687j6lr158" path="res://scenes/end_game_screen.tscn" id="14_7ua8r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3xj3m"]
 texture = ExtResource("1_kiw3p")
@@ -78,7 +81,7 @@ tile_set = SubResource("TileSet_p84oq")
 metadata/destroys_projectiles = true
 
 [node name="Player" parent="." unique_id=149999594 instance=ExtResource("3_cpr0p")]
-position = Vector2(0, -7)
+position = Vector2(0, -10)
 
 [node name="Checkpoint" parent="." unique_id=1002283913 instance=ExtResource("8_400sg")]
 position = Vector2(-40, -152)
@@ -96,7 +99,7 @@ position = Vector2(120, -680)
 position = Vector2(104, -904)
 
 [node name="Checkpoint6" parent="." unique_id=363362158 instance=ExtResource("8_400sg")]
-position = Vector2(344, -1160)
+position = Vector2(296, -1160)
 
 [node name="Checkpoint7" parent="." unique_id=1244709569 instance=ExtResource("8_400sg")]
 position = Vector2(296, -1448)
@@ -163,10 +166,6 @@ rotation = -1.5707964
 position = Vector2(264, -1144)
 rotation = -1.5707964
 
-[node name="Spikes19" parent="." unique_id=986596228 instance=ExtResource("9_g4kob")]
-position = Vector2(312, -1224)
-rotation = -3.1415927
-
 [node name="Spikes20" parent="." unique_id=459184977 instance=ExtResource("9_g4kob")]
 position = Vector2(312, -1256)
 
@@ -189,11 +188,11 @@ position = Vector2(344, -1816)
 rotation = 1.5707964
 
 [node name="Spikes7" parent="." unique_id=426338916 instance=ExtResource("9_g4kob")]
-position = Vector2(56, -584)
+position = Vector2(62, -583)
 rotation = -1.5707964
 
 [node name="JumpPad" parent="." unique_id=1221170848 instance=ExtResource("10_qy1jj")]
-position = Vector2(312, -1160)
+position = Vector2(328, -1160)
 
 [node name="JumpPad2" parent="." unique_id=1522973986 instance=ExtResource("10_qy1jj")]
 position = Vector2(312, -1320)
@@ -204,3 +203,34 @@ position = Vector2(296, -1496)
 [node name="Turret" parent="." unique_id=1069021855 instance=ExtResource("11_3xj3m")]
 position = Vector2(-26, -376)
 rotation = 4.712389
+
+[node name="Turret2" parent="." unique_id=1636087604 instance=ExtResource("11_3xj3m")]
+position = Vector2(234, -568)
+
+[node name="Turret3" parent="." unique_id=1239930275 instance=ExtResource("11_3xj3m")]
+position = Vector2(186, -744)
+
+[node name="Turret4" parent="." unique_id=2135905279 instance=ExtResource("11_3xj3m")]
+position = Vector2(346, -1384)
+
+[node name="MovingSpike" parent="." unique_id=2012580598 instance=ExtResource("12_mcffj")]
+position = Vector2(88, -473)
+
+[node name="MovingSpike4" parent="." unique_id=600930613 instance=ExtResource("12_mcffj")]
+position = Vector2(248, -1112)
+
+[node name="MovingSpike5" parent="." unique_id=784419836 instance=ExtResource("12_mcffj")]
+position = Vector2(344, -1721)
+
+[node name="MovingSpike3" parent="." unique_id=1548320528 instance=ExtResource("12_mcffj")]
+position = Vector2(312.00003, -1208)
+
+[node name="MovingSpike2" parent="." unique_id=465377977 instance=ExtResource("12_mcffj")]
+position = Vector2(136, -473)
+
+[node name="LevelEnd" parent="." unique_id=230324165 instance=ExtResource("13_2rd6h")]
+position = Vector2(408, -1896)
+
+[node name="EndGameScreen" parent="." unique_id=1463840710 instance=ExtResource("14_7ua8r")]
+
+[connection signal="level_completed" from="LevelEnd" to="EndGameScreen" method="show_game_over"]

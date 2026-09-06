@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://mu687j6lr158"]
+
+[ext_resource type="Script" uid="uid://cehg4fsepk745" path="res://scenes/end_game_screen.gd" id="1_62ohe"]
+
+[node name="EndGameScreen" type="CanvasLayer" unique_id=1463840710]
+script = ExtResource("1_62ohe")
+
+[node name="Control" type="Control" parent="." unique_id=1381131293]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=1658676630]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.7058824)
+
+[node name="Label" type="Label" parent="Control" unique_id=234928908]
+texture_filter = 2
+layout_mode = 0
+offset_left = 224.0
+offset_top = 29.0
+offset_right = 358.0
+offset_bottom = 52.0
+scale = Vector2(5.0427427, 5.0427427)
+text = "Game Completed"
+
+[node name="Button" type="Button" parent="Control" unique_id=1120819865]
+texture_filter = 2
+layout_mode = 0
+offset_left = 356.99997
+offset_top = 202.99998
+offset_right = 421.99997
+offset_bottom = 233.99998
+scale = Vector2(5.6751137, 5.6751137)
+text = "Restart"
+
+[node name="Button2" type="Button" parent="Control" unique_id=372482241]
+texture_filter = 2
+layout_mode = 0
+offset_left = 436.0
+offset_top = 393.0
+offset_right = 478.0
+offset_bottom = 424.0
+scale = Vector2(5.042759, 5.042759)
+text = "Quit"

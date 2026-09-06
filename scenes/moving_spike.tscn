@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bs4yd8lxt34sb"]
+
+[ext_resource type="Script" uid="uid://cnwrjilsdsyx8" path="res://scripts/moving_spike.gd" id="1_mhaxr"]
+[ext_resource type="Texture2D" uid="uid://bgfcxrdb8uh8v" path="res://assets/spikeBall.png" id="2_c5k1x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xrivr"]
+radius = 8.0
+
+[node name="MovingSpike" type="Area2D" unique_id=2012580598]
+scale = Vector2(0.8, 0.8)
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_mhaxr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=140938693]
+texture = ExtResource("2_c5k1x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1505383611]
+shape = SubResource("CircleShape2D_xrivr")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=5475168]
