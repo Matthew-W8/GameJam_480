@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://mu687j6lr158"]
 
-[ext_resource type="Script" uid="uid://cehg4fsepk745" path="res://scenes/end_game_screen.gd" id="1_62ohe"]
+[ext_resource type="Script" uid="uid://cehg4fsepk745" path="res://scripts/end_game_screen.gd" id="1_62ohe"]
 
 [node name="EndGameScreen" type="CanvasLayer" unique_id=1463840710]
 script = ExtResource("1_62ohe")
