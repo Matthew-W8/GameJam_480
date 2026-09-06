@@ -6,6 +6,8 @@ const JUMP_VELOCITY = -350.0
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 @onready var spawn_position: Vector2 = global_position
+@onready var death_sfx = $"../AudioStreamPlayer"
+@onready var checkpoint_sfx = $"../AudioStreamPlayer2"
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -41,7 +43,9 @@ func update_animation(direction: float) -> void:
 func set_checkpoint(new_position: Vector2) -> void:
 	spawn_position = new_position
 	print("New checkpoint set at: ", spawn_position)
+	checkpoint_sfx.play()
 
 func die_and_respawn() -> void:
+	death_sfx.play()
 	global_position = spawn_position
 	velocity = Vector2.ZERO

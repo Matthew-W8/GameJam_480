@@ -6,6 +6,7 @@ extends Node2D
 @onready var shoot_timer: Timer = $ShootTimer
 
 @export var fire_direction: Vector2 = Vector2.LEFT
+@onready var shoot_sfx = $AudioStreamPlayer2D
 
 func _ready() -> void:
 	shoot_timer.timeout.connect(_on_shoot_timer_timeout)
@@ -24,6 +25,7 @@ func _on_shoot_timer_timeout() -> void:
 		fire_direction = Vector2.RIGHT
 
 	if projectile_scene:
+		shoot_sfx.play()
 		var projectile = projectile_scene.instantiate()
 		get_tree().current_scene.add_child(projectile)
 		

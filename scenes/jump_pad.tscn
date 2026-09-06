@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c6s5wo7wumtxw" path="res://assets/jumpPad.png" id="1_7e8al"]
 [ext_resource type="Script" uid="uid://c78xx28b5f0is" path="res://scripts/jump_pad.gd" id="1_kabc6"]
+[ext_resource type="AudioStream" uid="uid://c2tw3juq7ov3v" path="res://sounds/spring_boing.wav" id="3_ityjr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
 size = Vector2(16, 16)
@@ -16,3 +17,6 @@ texture = ExtResource("1_7e8al")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1403035498]
 shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1730219097]
+stream = ExtResource("3_ityjr")

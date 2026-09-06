@@ -1,6 +1,7 @@
 extends Area2D
 
 @onready var animated_sprite: Sprite2D = $Sprite2D
+
 var is_activated: bool = false
 
 func _ready() -> void:

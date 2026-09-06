@@ -137,30 +137,10 @@ position = Vector2(152, -808)
 rotation = -1.5707964
 
 [node name="Spikes11" parent="." unique_id=2071365691 instance=ExtResource("9_g4kob")]
-position = Vector2(184, -888)
+position = Vector2(184, -885)
 
 [node name="Spikes12" parent="." unique_id=78276627 instance=ExtResource("9_g4kob")]
 position = Vector2(248, -920)
-
-[node name="Spikes13" parent="." unique_id=1314522157 instance=ExtResource("9_g4kob")]
-position = Vector2(232, -1016)
-rotation = 1.5707964
-
-[node name="Spikes14" parent="." unique_id=467286436 instance=ExtResource("9_g4kob")]
-position = Vector2(232, -1032)
-rotation = 1.5707964
-
-[node name="Spikes15" parent="." unique_id=389097245 instance=ExtResource("9_g4kob")]
-position = Vector2(232, -1000)
-rotation = 1.5707964
-
-[node name="Spikes16" parent="." unique_id=946781272 instance=ExtResource("9_g4kob")]
-position = Vector2(264, -1080)
-rotation = -1.5707964
-
-[node name="Spikes17" parent="." unique_id=717616113 instance=ExtResource("9_g4kob")]
-position = Vector2(264, -1096)
-rotation = -1.5707964
 
 [node name="Spikes18" parent="." unique_id=68114899 instance=ExtResource("9_g4kob")]
 position = Vector2(264, -1144)
@@ -173,18 +153,18 @@ position = Vector2(312, -1256)
 position = Vector2(312, -1576)
 
 [node name="Spikes22" parent="." unique_id=306471871 instance=ExtResource("9_g4kob")]
-position = Vector2(280, -1704)
+position = Vector2(279, -1701)
 
 [node name="Spikes23" parent="." unique_id=1939396825 instance=ExtResource("9_g4kob")]
-position = Vector2(264, -1784)
+position = Vector2(264, -1786)
 rotation = 3.1415927
 
 [node name="Spikes24" parent="." unique_id=366618646 instance=ExtResource("9_g4kob")]
-position = Vector2(280, -1784)
+position = Vector2(280, -1786)
 rotation = 3.1415927
 
 [node name="Spikes25" parent="." unique_id=832625094 instance=ExtResource("9_g4kob")]
-position = Vector2(344, -1816)
+position = Vector2(342, -1816)
 rotation = 1.5707964
 
 [node name="Spikes7" parent="." unique_id=426338916 instance=ExtResource("9_g4kob")]
@@ -229,8 +209,11 @@ position = Vector2(312.00003, -1208)
 position = Vector2(136, -473)
 
 [node name="LevelEnd" parent="." unique_id=230324165 instance=ExtResource("13_2rd6h")]
-position = Vector2(408, -1896)
+position = Vector2(372, -1896)
 
 [node name="EndGameScreen" parent="." unique_id=1463840710 instance=ExtResource("14_7ua8r")]
+
+[node name="JumpPad4" parent="." unique_id=1638478406 instance=ExtResource("10_qy1jj")]
+position = Vector2(136, -600)
 
 [connection signal="level_completed" from="LevelEnd" to="EndGameScreen" method="show_game_over"]
