@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://g8ijc7kqkf5e" path="res://scripts/spikes.gd" id="1_xbcdo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
-size = Vector2(6.521737, 14)
+size = Vector2(6.521737, 12)
 
 [node name="Spikes" type="Area2D" unique_id=590601564]
 collision_layer = 4
@@ -15,6 +15,6 @@ script = ExtResource("1_xbcdo")
 texture = ExtResource("1_5pg7g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=568930891]
-position = Vector2(2.3841858e-07, 1)
+position = Vector2(2.3841858e-07, 2)
 scale = Vector2(1.8400006, 1)
 shape = SubResource("RectangleShape2D_xrivr")
